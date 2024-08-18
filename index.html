@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="turn"></div>
+        <div class="board"></div>
+        <button id="names">Enter player names</button>
+        <button id="reset">Reset game</button>
+        <dialog id="occupied-cell-dialog">
+            <button id="close-button" autofocus>Close</button>
+            <p>Cell already selected, please choose another!</p>
+        </dialog>
+        <dialog id="endgame-dialog">
+            <button id="reset-button" autofocus>Reset Game</button>
+        </dialog>
+        <dialog id="name-dialog">
+            <form id="name-form">
+                <p>
+                <label>
+                    Player 1 name:
+                    <input name="name1" type="text" required />
+                </label>
+                </p>
+                <p>
+                <label>
+                    Player 2 name:
+                    <input name="name2" type="text" required />
+                </label>
+                </p>
+                <div>
+                    <button id="confirmBtn" value="default">Confirm</button>
+                </div>
+            </form>
+        </dialog>     
+    </div>
+  </body>
+</html>
